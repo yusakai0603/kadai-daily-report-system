@@ -141,7 +141,7 @@ public abstract class ActionBase {
      * セッションIDを取得する
      * @return セッションID
      */
-    protected String getTokenId() {
+    protected String getTokenId() { //リクエストからセッションIDを取得します。取得した値は入力フォームの隠し項目として埋め込み、リクエストの正当性の判定に利用
         return request.getSession().getId();
     }
 
