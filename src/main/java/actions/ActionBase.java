@@ -100,7 +100,7 @@ public abstract class ActionBase {
      * @throws ServletException
      * @throws IOException
      */
-    protected void redirect(ForwardConst action, ForwardConst command)
+    protected void redirect(ForwardConst action, ForwardConst command) //引数の値を元にURLを構築しリダイレクトを行う
             throws ServletException, IOException {
 
         //URLを構築
